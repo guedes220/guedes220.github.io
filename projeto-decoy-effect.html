@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decoy effect nos preços de pacotes de viagem - Matheus Guedes</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Project Page CSS -->
+    <link rel="stylesheet" href="css/projeto-decoy-effect.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="content-wrapper">
+            <div class="project-header">
+                <img src="Imagens/foto_perfil.jpg" alt="Matheus Guedes" class="author-img">
+                <div class="author-info">
+                    <h1>Matheus Guedes</h1>
+                    <p>Data analyst</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/matheusaugustoguedes/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://wa.me/5543999600283" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://github.com/guedes220" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="project-title">Decoy effect nos preços de pacotes de viagem</h1>
+            <p>Este projeto foi criado por mim enquanto eu trabalhava no Hurb.</p>
+
+            <div class="project-meta">
+                <span class="meta-item">Python</span>
+                <span class="meta-item">BigQuery</span>
+                <span class="meta-item">Google Analytics 4 (GA4)</span>
+                <span class="meta-item">Kameleoon</span>
+                <span class="meta-item">Análise de dados</span>
+                
+            </div>
+
+            <p class="disclaimer">Todos os números apresentados aqui foram alterados para preservar os dados originais da empresa, tenho autorização para a publicação desta entrega neste portfólio.</p>
+            
+            <div class="reading-time">
+                <i class="far fa-clock"></i>
+                Tempo estimado de leitura: 5 minutos
+            </div>
+
+            <div class="project-content">
+                <h2>Entendendo o projeto</h2>
+                <p>O Hurb é uma empresa de turismo, seus principais produtos são diárias em hotéis e pacotes de viagem.<br>
+                Eu estava trabalhando em um projeto para identificar a quantidade ideal de diárias nos pacotes de viagem, com base no destino escolhido pelo cliente.</p>
+                <p>Durante a análise descritiva, utilizando Python, observei que oferecemos praticamente a mesma quantidade de diárias para quase todos os pacotes disponíveis no site: quatro diárias. No entanto, essa abordagem é insustentável, considerando a diversidade de destinos disponíveis. Em muitos deles, quatro diárias não são suficientes para que o viajante conheça sequer 50% das atrações turísticas, enquanto, em outros, esse período é mais do que adequado. Além disso, há uma grande variedade de perfis de clientes—alguns preferem viagens curtas, enquanto outros optam por estadias mais longas.</p>
+                <p>Diante disso, busquei entender quais eram as quantidades de diárias mais procuradas para cada destino e constatei que sete diárias possuem uma demanda significativamente maior do que as quatro atualmente oferecidas. No entanto, como o Hurb é reconhecido por seus preços acessíveis, não seria viável simplesmente aumentar a quantidade de diárias, pois isso resultaria em um custo mais elevado para os clientes. Foi então que me lembrei do decoy effect e decidi aplicá-lo fazendo um experimento.</p>
+                <p>Os resultados foram excelentes, consegui um ROI de 4000% e 20% do faturamento total dos produtos analisados foram por conta deste experimento.</p>
+
+
+                <h2>Primeiros passos</h2>
+                <p>Eu identifiquei essa oportunidade de inserir o decoy effect nos preços do Hurb, mas para que isso acontecesse, eu precisava de ajuda.<br> Imediatamente acionei meu então líder, e mostrei para ele um esboço da ideia, e com prontidão ele me apoiou e começamos ali a criar um plano de ação.</p>
+                <p>Nós precisávamos convencer a diretoria e coordenação do time de growth (que era responsável pelo portfólio de produtos do Hurb), de que a ideia de adicionar decoy effect no preço dos destinos era muito boa.</p>
+                <p>No entanto, nosso time funcionava da seguinte forma: não gostávamos de mostrar o problema, para depois tentar buscar a solução e fazer a solução.
+                    Nesta reunião com a diretoria de growth eu deveria mostrar o problema (apenas quatro diárias não é a ideal), dizer qual é a solução (adicionar mais quantidade de diárias) e ainda já mostrar a solução funcionando (o experimento já deveria estar rodando).<br> Acreditávamos que isso é visto com bons olhos pela diretoria, e conseguíriamos grandes aliados de peso em apenas uma reunião.</p>
+                <p>Então antes de qualquer coisa, eu já deveria criar o experimento, e foi o que fiz, usando kameleeon, eu criei um código javascript para alterar alguns pontos no site.
+                    <br> Com o auxílio de duas pessoas (uma de pricing e outra de portfólio), eu pedi para que elas criassem um produto no destino Salvador (vou explicar o por que) com a quantidade de diárias que eu solicitei e tentando trazer o menor preço possível, e essas duas pessoas fizeram isso para mim.</p>
+                    
+                <h2>Convencer a diretoria</h2>
+                    <p>Agora, com o experimento já rodando, eu tinha apenas 3 dias para montar uma apresentação que tinha o objetivo de convencer a diretoria e coordenação de growth a apoiar o projeto decoy effect. <br>
+                    Como toda a apresentação que eu faço, dei todo um overview do problema, mostrei qual seria a solução, e a cereja do bolo é que a solução já estaria rodando no momento em que eu apresentava para eles.</p>
+                    <p>Esta foi a apresentação que eu fiz (obs.: o então diretor de growth só falava inglês, por isso os slides estão em inglês, eu também apresentei falando em inglês):</p>
+
+                    <div class="presentation-container">
+                        <iframe src="https://docs.google.com/presentation/d/1yN5Z1YXSFQ-FlDWDWcvS_mo22O0JWflXVQtNNdl3Q0A/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                    </div>
+
+                    <p class="disclaimer">Todos os números apresentados no slide foram alterados para preservar os dados originais da empresa, tenho autorização para a publicação desta entrega neste portfólio.</p>
+
+                <p>Como já era de se esperar, conseguimos o apoio da diretoria e coordenação de growth apenas nesta reunião.</p>
+                <p>Como fica claro na apresentação, a meta deste projeto agora não era mais analisar qual era a quantidade de diárias ideal para cada pacote, mas sim aumentar o ticket médio da empresa usando o decoy effect - deixamos para analisar a quantidade ideal após os resultados desse experimento.</p>
+                <p>Nós precisávamos de apoio da diretoria e coordenação de growth pois eles facilitariam (e muito) com que o experimento tivesse resultados mais rápidos. <br>
+                    O que eu pedi para eles foi para criar 3 pacotes, em todos os clientes poderiam escolher entre 4, 7 ou 10 diárias, e além disso deixar os 3 pacotes na homepage do Hurb, que é onde temos uma alta visibilidade e consequentemente os resultados do experimento se mostrariam bem mais rapidamente. E claro, prontamente fizeram isso por nós.</p>
+                    <h2>Resultados</h2>
+                    <p>Então com o experimento já rodando, e os pacotes já publicados na homepage do Hurb, o que me faltava é entender como eu iria mensurar os resultados deste experimento. 
+                        Embora o kameleeon seja uma ótima ferramenta, encontrei uma limitação nele para este caso específico, então eu tive que recorrer ao bom e velho Google Analytics 4 para extrair os dados que me permitiriam mensurar o projeto.</p>
+                <p>Após exatos 49 dias, já tínhamos uma alta significância estatística e alto poder estatístico, de modo geral, os resultados já estavam mais do que prontos para serem divulgados.</p>
+                <p>Foi então que com muito orgulho eu criei a apresentação que mostra os resultados do experimento, nela eu mostro específicamente como esse experimento foi um sucesso, não só entregando 4000% de ROI e 20% de faturamento, mas mostrando que 21,2% dos clientes optam por 7 diárias justamente por conta das modificações que eu fiz.</p>
+
+                <div class="presentation-container">
+                    <iframe src="https://docs.google.com/presentation/d/12S6W-sfPWFwp07awtcQfAGFoNlJvq67Fu3CJ5S0pvzA/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                </div>
+                <p class="disclaimer">Todos os números apresentados no slide foram alterados para preservar os dados originais da empresa, tenho autorização para a publicação desta entrega neste portfólio.</p>
+            </div>
+
+            <h2>Próximos passos</h2>
+            <p>O decoy effect funcionou, mostramos estatísticamente que conseguímos aumentar o ticket médio da empresa com este experimento.</p>
+            <p>Deste modo agora o próximo passo seria analisar destino por destino e identificar qual seria o decoy para cada um deles, o que seria mais vantajoso financeiramente para a empresa. Automatizando esse processo através do python, usando dados da empresa em conjunto com dados do Skyscanner.</p>
+            <p>Infelizmente não consegui chegar neste nível por que fui desligado da empresa por conta de um layoff (pois eu tinha pouco tempo de casa), mas como você pode ver, este projeto foi um sucesso, assim que aplicado.</p>
+            <p>Acredito fortemente que a empresa irá lucrar muito com este experimento, e que ele será um sucesso assim que aplicado.</p>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
