@@ -179,4 +179,30 @@
     border: none;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-} 
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 20px;
+    background-color: #47B2FF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #3399FF;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.back-button i {
+    font-size: 0.875rem;
+}
