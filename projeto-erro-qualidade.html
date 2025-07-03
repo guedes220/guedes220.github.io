@@ -16,12 +16,18 @@
     <link rel="stylesheet" href="css/projeto-decoy-effect.css">
 </head>
 <body>
+    <!-- Seletor de idioma -->
+    <div id="language-switcher" style="position:fixed;top:10px;right:20px;z-index:1000;display:flex;gap:10px;pointer-events:auto;">
+        <img src="Imagens/flag-br.png" alt="Português" id="lang-pt" style="width:37px;cursor:pointer;" title="Português (Brasil)">
+        <img src="Imagens/flag-us.png" alt="English" id="lang-en" style="width:33px;cursor:pointer;" title="English (US)">
+    </div>
     <div class="grid-container">
         <div class="content-wrapper">
             <a href="index.html" class="back-button">
                 <i class="fas fa-chevron-left"></i>
                 Voltar ao portfólio
             </a>
+            
             <div class="project-header">
                 <img src="Imagens/foto_perfil.jpg" alt="Matheus Guedes" class="author-img">
                 <div class="author-info">
@@ -35,8 +41,8 @@
                 </div>
             </div>
 
-            <h1 class="project-title">Erros de qualidade de dados em tempo real no dashboard</h1>
-            <p>Este projeto foi criado por mim enquanto eu trabalhava na Frete.com.</p>
+            <h1 class="project-title" data-i18n="projeto_erros_title">Erros de qualidade de dados em tempo real no dashboard</h1>
+            <p data-i18n="projeto_erros_descricao">Este projeto foi criado por mim enquanto eu trabalhava na Frete.com.</p>
 
             <div class="project-meta">
                 <span class="meta-item">Tableau</span>
@@ -49,13 +55,13 @@
             
             <div class="reading-time">
                 <i class="far fa-clock"></i>
-                Tempo estimado de leitura: 5 minutos
+                <span data-i18n="tempo_leitura">Tempo estimado de leitura: 5 minutos</span>
             </div>
 
             <div class="project-content">
-                <h2>Entendendo o projeto</h2>
+                <h2 data-i18n="entendendo_projeto">Entendendo o projeto</h2>
                 <p>Na minha experiência na frete.com eu trabalhei de forma muito presente no setor comercial, desde o dia que entrei eu percebi que o time tinha muita desconfiança nos dados fornecidos pelos relatórios da empresa.<br>Com o passar do tempo fui entendendo que eles realmente tinham motivos para isso, sabe aquele problema de o mesmo indicador ter números diferentes dependendo do dashboard analisado? Isso acontecia com bastante frequência no tempo anterior à minha chegada na empresa.</p>
-                <h2>Buscando soluções</h2>
+                <h2 data-i18n="buscando_solucoes">Buscando soluções</h2>
                 <p>Sabendo desses problemas de qualidade de dados na empresa, discuti soluções com meu então lider e um colega de equipe.</p>
                 <p>Sugeri criar além de uma centralização de dados numa única tabela (tabela verdade), também criar uma forma em que o próprio usuário no Tableau pudesse nos indicar (e indicar a qualquer pessoa que abrisse o relatório) que algo estava errado.</p>
                 <h4>Tabela verdade?</h4>
@@ -72,7 +78,7 @@
                 <img src="Imagens/kpis_qualidade.png" alt="kpi's de qualidade" class="project-image-medium">
                 <p>O usuário pode ver somente um desses indicadores, e ele indica a "saúde" dos dados do relatório.<br>A cor vermelha, como padrão em praticamente tudo, indica que algo está errado, já a cor verde que algo está bom.</p>
                 <p>Você pode ver que temos vários níveis de problemas, desde os mais simples até os mais complexos.<br>O erro "leve" por exemplo indica geralmente que o problema é apenas em um registro, que não impacta muita coisa.<br>Já o erro "Muito grave" indica que o problema está impactando muito os números do relatório.</p>
-                <h2>Funcionamento na prática</h2>
+                <h2 data-i18n="funcionamento_pratica">Funcionamento na prática</h2>
                 <p>Reforçando o compromisso com a facilidade de uso, o aviso fica visível o tempo inteiro para o usuário, sem tirar a atenção dele na análise do relatório (as cores foram pensadas para isso).</p>
                 <p>O usuário pode ver exatamente qual é o problema que está acontecendo simplesmente passando o mouse por cima do aviso.</p>
                 <video autoplay loop muted playsinline class="project-image">
@@ -86,7 +92,7 @@
                 <p>A partir disso, recebemos um registro em um google sheets, este está atrelado ao dashboard e em tempo real já altera o icone no tableau para "erro em análise".<br>Então eu analiso e valido se é um erro de fato, e dou uma nota para o mesmo, se é leve, médio, etc.</p>
                 <p>Até este momento os erros eram reportados manualmente, mas estávamos trabalhando para também automatizar outros erros mais fáceis de serem identificados, como um número muito outlier no faturamento.</p>
                 <p>Infelizmente saí da empresa antes que conseguísse automatizar, mas tanto as tabelas verdade quanto o indicador de erro continuam presentes na empresa até hoje.</p>
-                <h2>Conclusão</h2>
+                <h2 data-i18n="conclusao">Conclusão</h2>
                 <p>Conforme foi visto, esta implementação foi um sucesso, como os reports de erro eram armazenados numa google sheets, nós até conseguíamos mensurar quantos erros os relatórios tinham e seus motivos.<br>Isso acabou se tornando um relatório a parte, que indicava a "saúde" dos nossos relatórios, e também se tornou um PDI para os analistas de dados, algo do tipo: no próximo trimestre a soma de erros de seus relatórios não pode ser maior que 6.</p>
 
             </div>
@@ -95,5 +101,7 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
 </body>
 </html> 

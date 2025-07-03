@@ -135,6 +135,7 @@
     grid-column: 2 / 6;
     width: 100%;
     position: relative;
+    overflow: visible;
 }
 
 .grid-container {
@@ -146,6 +147,8 @@
     position: relative;
     padding-top: 10rem;
     padding-bottom: 10rem;
+    overflow: visible;
+    height: auto;
 }
 
 .reading-time {
@@ -206,3 +209,15 @@
 .back-button i {
     font-size: 0.875rem;
 }
+
+/* Garantir que o scroll funcione corretamente */
+html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: auto;
+    min-height: 100vh;
+}
+
+body {
+    position: relative;
+} 

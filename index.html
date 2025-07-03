@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Seletor de idioma -->
+    <div id="language-switcher" style="position:fixed;top:10px;right:20px;z-index:9999;display:flex;gap:10px;">
+        <img src="Imagens/flag-br.png" alt="Português" id="lang-pt" style="width:37px;cursor:pointer;" title="Português (Brasil)">
+        <img src="Imagens/flag-us.png" alt="English" id="lang-en" style="width:33px;cursor:pointer;" title="English (US)">
+    </div>
     <!-- Navegação fixa -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
@@ -23,19 +28,19 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#inicio">Início</a>
+                        <a class="nav-link" href="#inicio" data-i18n="nav_inicio">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#sobre-trabalho">Sobre meu trabalho</a>
+                        <a class="nav-link" href="#sobre-trabalho" data-i18n="nav_sobre_trabalho">Sobre meu trabalho</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#sobre-mim">Sobre mim</a>
+                        <a class="nav-link" href="#sobre-mim" data-i18n="nav_sobre_mim">Sobre mim</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#experiencia">Experiência profissional</a>
+                        <a class="nav-link" href="#experiencia" data-i18n="nav_experiencia">Experiência profissional</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#entregas">Projetos profissionais</a>
+                        <a class="nav-link" href="#entregas" data-i18n="nav_entregas">Projetos profissionais</a>
                     </li>
                 </ul>
             </div>
@@ -47,7 +52,10 @@
         <section id="inicio" class="mb-5">
             <div class="row">
                 <div class="col-12">
-                    <div class="badge bg-primary mb-3">Olá, bem-vindo(a) ao meu portfólio<img src="Imagens/hello_gif.gif" alt="Hello" class="hello-gif"></div>
+                    <div class="badge bg-primary mb-3">
+                        <span data-i18n="bem_vindo">Olá, bem-vindo(a) ao meu portfólio</span>
+                        <img src="Imagens/hello_gif.gif" alt="Hello" class="hello-gif">
+                    </div>
                 </div>
             </div>
             <div class="row align-items-center">
@@ -55,7 +63,7 @@
                     <h1 class="mb-2">Matheus Guedes</h1>
                     <p class="text-muted mb-2">Data analyst</p>
                     <p class="mb-1"><img src="Imagens/icone_email.png" alt="Email" class="contact-icon"> guedesloudback@gmail.com</p>
-                    <p class="mb-1"><img src="Imagens/icone_localizacao.png" alt="Localização" class="contact-icon"> Londrina, Paraná, Brasil</p>
+                    <p class="mb-1"><img src="Imagens/icone_localizacao.png" alt="Localização" class="contact-icon"> <span data-i18n="localizacao">Londrina, Paraná, Brasil</span></p>
                     <p class="mb-0"><img src="Imagens/icone_telefone.png" alt="Telefone" class="contact-icon"> +55 (43) 99960-0283</p>
                     <div class="social-icons mt-4">
                         <a href="https://www.linkedin.com/in/matheusaugustoguedes/" target="_blank" class="social-icon linkedin">
@@ -89,20 +97,18 @@
         <section id="sobre-trabalho" class="mb-5">
             <div class="row">
                 <div class="col-md-7">
-                    <h2>Sobre meu trabalho</h2>
-                    <p class="highlight-text mb-4">
-                        Ajudando empresas a tomarem decisões mais inteligentes e baseadas em evidências há 4 anos e 8 meses.
-                    </p>
+                    <h2 data-i18n="sobre_trabalho">Sobre meu trabalho</h2>
+                    <p class="highlight-text mb-4"><span data-i18n="ajudando_empresas">Ajudando empresas a tomarem decisões mais inteligentes e baseadas em evidências há 4 anos e 8 meses.</span></p>
                     <div class="work-description">
-                        <p>Com mais de 4 anos de experiência em Tableau, crio relatórios aplicando princípios de UI/UX design.</p>
-                        <p>Entretanto, minhas entregas vão além da criação de dashboards — realizo uma verdadeira análise de dados.</p>
-                        <p>Utilizando Python, desenvolvo análises estatísticas descritivas que auxiliam stakeholders a compreender profundamente seus produtos. Além disso, incluo recomendações para melhorias e as valido por meio de testes de hipótese, geralmente testes A/B.</p>
-                        <p>Em uma de minhas entregas, consegui um ROI superior a 4000%, representando 20% do faturamento total dos produtos analisados — presente na sessão "Minhas entregas".</p>
-                        <p>Também gero valor por meio de machine learning, criando modelos de previsão de faturamento e clusterização de grupos.</p>
+                        <p data-i18n="work_desc_1">Com mais de 4 anos de experiência em Tableau (e 2 em Power BI), crio relatórios aplicando princípios de UI/UX design.</p>
+                        <p data-i18n="work_desc_2">Entretanto, minhas entregas vão além da criação de dashboards — realizo uma verdadeira análise de dados.</p>
+                        <p data-i18n="work_desc_3">Utilizando Python, desenvolvo análises estatísticas descritivas que auxiliam stakeholders a compreender profundamente seus produtos. Além disso, incluo recomendações para melhorias e as valido por meio de testes de hipótese, geralmente testes A/B.</p>
+                        <p data-i18n="work_desc_4">Em uma de minhas entregas, consegui um ROI superior a 4000%, representando 20% do faturamento total dos produtos analisados — presente na sessão "Minhas entregas".</p>
+                        <p data-i18n="work_desc_5">Também gero valor por meio de machine learning, criando modelos de previsão de faturamento e clusterização de grupos.</p>
                     </div>
                 </div>
                 <div class="col-md-5">
-                    <h2>Ferramentas</h2>
+                    <h2 data-i18n="ferramentas">Ferramentas</h2>
                     <div class="tools-list">
                         <div class="tool-item mb-4">
                             <div class="d-flex justify-content-between mb-2">
@@ -115,15 +121,15 @@
                                 <div class="level-indicator filled"></div>
                             </div>
                             <div class="skill-labels">
-                                <span>Básico</span>
-                                <span>Intermediário</span>
-                                <span>Avançado</span>
-                                <span>Especialista</span>
+                                <span data-i18n="basico">Básico</span>
+                                <span data-i18n="intermediario">Intermediário</span>
+                                <span data-i18n="avancado">Avançado</span>
+                                <span data-i18n="especialista">Especialista</span>
                             </div>
                         </div>
                         <div class="tool-item mb-4">
                             <div class="d-flex justify-content-between mb-2">
-                                <span>SQL <small>(Bigquery, snowflake, dremio e t-sql)</small></span>
+                                <span>SQL <small data-i18n="sql_ferramentas">(Bigquery, snowflake, dremio e t-sql)</small></span>
                             </div>
                             <div class="skill-level">
                                 <div class="level-indicator filled"></div>
@@ -132,10 +138,10 @@
                                 <div class="level-indicator filled"></div>
                             </div>
                             <div class="skill-labels">
-                                <span>Básico</span>
-                                <span>Intermediário</span>
-                                <span>Avançado</span>
-                                <span>Especialista</span>
+                                <span data-i18n="basico">Básico</span>
+                                <span data-i18n="intermediario">Intermediário</span>
+                                <span data-i18n="avancado">Avançado</span>
+                                <span data-i18n="especialista">Especialista</span>
                             </div>
                         </div>
                         <div class="tool-item mb-4">
@@ -149,15 +155,15 @@
                                 <div class="level-indicator filled"></div>
                             </div>
                             <div class="skill-labels">
-                                <span>Básico</span>
-                                <span>Intermediário</span>
-                                <span>Avançado</span>
-                                <span>Especialista</span>
+                                <span data-i18n="basico">Básico</span>
+                                <span data-i18n="intermediario">Intermediário</span>
+                                <span data-i18n="avancado">Avançado</span>
+                                <span data-i18n="especialista">Especialista</span>
                             </div>
                         </div>
                         <div class="tool-item mb-4">
                             <div class="d-flex justify-content-between mb-2">
-                                <span>Python <small>(focado em análise de dados)</small></span>
+                                <span>Python <small data-i18n="python_foco">(focado em análise de dados)</small></span>
                             </div>
                             <div class="skill-level">
                                 <div class="level-indicator filled"></div>
@@ -166,10 +172,10 @@
                                 <div class="level-indicator"></div>
                             </div>
                             <div class="skill-labels">
-                                <span>Básico</span>
-                                <span>Intermediário</span>
-                                <span>Avançado</span>
-                                <span>Especialista</span>
+                                <span data-i18n="basico">Básico</span>
+                                <span data-i18n="intermediario">Intermediário</span>
+                                <span data-i18n="avancado">Avançado</span>
+                                <span data-i18n="especialista">Especialista</span>
                             </div>
                         </div>
                         <div class="tool-item mb-4">
@@ -179,14 +185,14 @@
                             <div class="skill-level">
                                 <div class="level-indicator filled"></div>
                                 <div class="level-indicator filled"></div>
-                                <div class="level-indicator"></div>
+                                <div class="level-indicator filled"></div>
                                 <div class="level-indicator"></div>
                             </div>
                             <div class="skill-labels">
-                                <span>Básico</span>
-                                <span>Intermediário</span>
-                                <span>Avançado</span>
-                                <span>Especialista</span>
+                                <span data-i18n="basico">Básico</span>
+                                <span data-i18n="intermediario">Intermediário</span>
+                                <span data-i18n="avancado">Avançado</span>
+                                <span data-i18n="especialista">Especialista</span>
                             </div>
                         </div>
                     </div>
@@ -201,29 +207,21 @@
         <section id="sobre-mim" class="mb-5">
             <div class="row">
                 <div class="col-md-7">
-                    <h2>Sobre mim</h2>
+                    <h2 data-i18n="sobre_mim">Sobre mim</h2>
                     <div class="about-content">
-                        <p>Transformo dados em decisões estratégicas, enxergando números como histórias que impulsionam negócios. Em ambientes dinâmicos, não apenas analiso dados, mas busco soluções além do óbvio, antecipando necessidades e propondo melhorias. Se sua empresa valoriza profissionais curiosos, estratégicos e que vão além do esperado, podemos ter um ótimo fit!
-
-
-
-
-
-
-
-                        </p>
+                        <p data-i18n="sobre_mim_texto">Transformo dados em decisões estratégicas, enxergando números como histórias que impulsionam negócios. Em ambientes dinâmicos, não apenas analiso dados, mas busco soluções além do óbvio, antecipando necessidades e propondo melhorias. Se sua empresa valoriza profissionais curiosos, estratégicos e que vão além do esperado, podemos ter um ótimo fit!</p>
                     </div>
                 </div>
                 <div class="col-md-5">
-                    <h2>Formação acadêmica</h2>
+                    <h2 data-i18n="formacao_academica">Formação acadêmica</h2>
                     <div class="education-timeline">
                         <div class="education-item">
                             <div class="education-logo">
                                 <img src="Imagens/fiap.png" alt="FIAP">
                             </div>
                             <div class="education-info">
-                                <h3>Pós-graduação em Análise de dados</h3>
-                                <p class="period">jan de 2024 - dez de 2024</p>
+                                <h3 data-i18n="pos_graduacao">Pós-graduação em Análise de dados</h3>
+                                <p class="period" data-i18n="periodo_pos">jan de 2024 - dez de 2024</p>
                             </div>
                         </div>
                         <div class="education-item">
@@ -231,16 +229,16 @@
                                 <img src="Imagens/fiap.png" alt="FIAP">
                             </div>
                             <div class="education-info">
-                                <h3>Técnologo em Banco de Dados</h3>
-                                <h3>(data science, big data & B.I)</h3>
-                                <p class="period">jun de 2021 - jun de 2023</p>
+                                <h3 data-i18n="tecnologo_bd">Técnologo em Banco de Dados</h3>
+                                <h3 data-i18n="data_science_bd">(data science, big data & B.I)</h3>
+                                <p class="period" data-i18n="periodo_graduacao">jun de 2021 - jun de 2023</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <h2 class="mt-5">Esses profissionais recomendam meu trabalho</h2>
+            <h2 class="mt-5" data-i18n="profissionais_recomendam">Esses profissionais recomendam meu trabalho</h2>
             <!-- Desktop Layout -->
             <div class="row d-none d-md-flex">
                 <div class="col-md-4 mb-4">
@@ -249,7 +247,7 @@
                         <h3>Guilherme Estrada</h3>
                         <p>Analytics Manager</p>
                         <p>Hurb</p>
-                        <p class="recommendation-text">Foi meu gestor direto<br> na frete.com e no Hurb</p>
+                        <p class="recommendation-text" data-i18n="recomendacao_guilherme">Foi meu gestor direto<br> na frete.com e no Hurb</p>
                         <a href="https://www.linkedin.com/in/guilhermeestrada/" target="_blank" class="recommendation-linkedin">
                             <img src="Imagens/icone_linkedin.png" alt="LinkedIn" class="default">
                             <img src="Imagens/icone_linkedin_azul.png" alt="LinkedIn" class="hover">
@@ -262,7 +260,7 @@
                         <h3>Jean arouck</h3>
                         <p>Sr. Data Analyst</p>
                         <p>Mercado Livre</p>
-                        <p class="recommendation-text">Foi meu gestor direto<br> no Moinho Arapongas</p>
+                        <p class="recommendation-text" data-i18n="recomendacao_jean">Foi meu gestor direto<br> no Moinho Arapongas</p>
                         <a href="https://www.linkedin.com/in/jeanarouck/" target="_blank" class="recommendation-linkedin">
                             <img src="Imagens/icone_linkedin.png" alt="LinkedIn" class="default">
                             <img src="Imagens/icone_linkedin_azul.png" alt="LinkedIn" class="hover">
@@ -275,7 +273,7 @@
                         <h3>Renato Valentim</h3>
                         <p>CRM Manager</p>
                         <p>Mercado Livre</p>
-                        <p class="recommendation-text">Foi meu gestor direto<br> na Whirlpool</p>
+                        <p class="recommendation-text" data-i18n="recomendacao_renato">Foi meu gestor direto<br> na Whirlpool</p>
                         <a href="https://www.linkedin.com/in/renato-valentin-34b9bb12b/" target="_blank" class="recommendation-linkedin">
                             <img src="Imagens/icone_linkedin.png" alt="LinkedIn" class="default">
                             <img src="Imagens/icone_linkedin_azul.png" alt="LinkedIn" class="hover">
@@ -293,7 +291,7 @@
                             <h3>Guilherme Estrada</h3>
                             <p>Analytics Manager</p>
                             <p>Hurb</p>
-                            <p class="recommendation-text">Foi meu gestor direto<br> na frete.com e no Hurb</p>
+                            <p class="recommendation-text" data-i18n="recomendacao_guilherme">Foi meu gestor direto<br> na frete.com e no Hurb</p>
                             <a href="https://www.linkedin.com/in/guilhermeestrada/" target="_blank" class="recommendation-linkedin">
                                 <img src="Imagens/icone_linkedin.png" alt="LinkedIn" class="default">
                                 <img src="Imagens/icone_linkedin_azul.png" alt="LinkedIn" class="hover">
@@ -306,7 +304,7 @@
                             <h3>Jean arouck</h3>
                             <p>Sr. Data Analyst</p>
                             <p>Mercado Livre</p>
-                            <p class="recommendation-text">Foi meu gestor direto<br> no Moinho Arapongas</p>
+                            <p class="recommendation-text" data-i18n="recomendacao_jean">Foi meu gestor direto<br> no Moinho Arapongas</p>
                             <a href="https://www.linkedin.com/in/jeanarouck/" target="_blank" class="recommendation-linkedin">
                                 <img src="Imagens/icone_linkedin.png" alt="LinkedIn" class="default">
                                 <img src="Imagens/icone_linkedin_azul.png" alt="LinkedIn" class="hover">
@@ -319,7 +317,7 @@
                             <h3>Renato Valentim</h3>
                             <p>CRM Manager</p>
                             <p>Mercado Livre</p>
-                            <p class="recommendation-text">Foi meu gestor direto<br> na Whirlpool</p>
+                            <p class="recommendation-text" data-i18n="recomendacao_renato">Foi meu gestor direto<br> na Whirlpool</p>
                             <a href="https://www.linkedin.com/in/renato-valentin-34b9bb12b/" target="_blank" class="recommendation-linkedin">
                                 <img src="Imagens/icone_linkedin.png" alt="LinkedIn" class="default">
                                 <img src="Imagens/icone_linkedin_azul.png" alt="LinkedIn" class="hover">
@@ -332,7 +330,7 @@
                 <div class="carousel-navigation-container">
                     <button class="carousel-control-prev" type="button" data-bs-target="#recommendationsCarousel" data-bs-slide="prev" data-bs-toggle="tooltip" data-bs-placement="top" title="Recomendação anterior">
                         <i class="fas fa-chevron-left"></i>
-                        <span class="visually-hidden">Anterior</span>
+                        <span class="visually-hidden" data-i18n="anterior">Anterior</span>
                     </button>
                     
                     <div class="carousel-indicators">
@@ -343,7 +341,7 @@
                     
                     <button class="carousel-control-next" type="button" data-bs-target="#recommendationsCarousel" data-bs-slide="next" data-bs-toggle="tooltip" data-bs-placement="top" title="Próxima recomendação">
                         <i class="fas fa-chevron-right"></i>
-                        <span class="visually-hidden">Próximo</span>
+                        <span class="visually-hidden" data-i18n="proximo">Próximo</span>
                     </button>
                 </div>
             </div>
@@ -355,7 +353,7 @@
 
         <!-- Experiência profissional -->
         <section id="experiencia" class="mb-5">
-            <h2>Experiências profissionais</h2>
+            <h2 data-i18n="experiencias_profissionais">Experiências profissionais</h2>
             <div class="row justify-content-center">
                 <div class="col-md-10">
                     <div id="experienceCarousel" class="carousel slide" data-bs-ride="false" data-bs-interval="false" data-bs-touch="true">
@@ -369,13 +367,12 @@
                                         </div>
                                         <div class="company-info">
                                             <h3>HURB TECHNOLOGIES S.A.</h3>
-                                            <p class="text-muted">Analista de dados sênior · Mai de 2024 - Fev de 2025 (10 meses)</p>
+                                            <p class="text-muted" data-i18n="cargo_hurb">Analista de dados sênior · Mai de 2024 - Fev de 2025 (10 meses)</p>
                                         </div>
                                     </div>
-                                    <p class="experience-description"><span class="experience-highlight">O Hurb é uma empresa de turismo, seus principais produtos são diárias em hotéis e pacote de viagem.</span></p>
-                                    <p class="experience-description"> Dentro da empresa, eu atuava principalmente em Growth, analisando dados usando python em conjunto com bigquery. Em uma de minhas análises no google analytics (GA4) notei uma demanda no mercado que não oferecíamos, portanto criei um teste A/B (usando kameleeon) para entender como os clientes iriam reagir.
-                                    Eu consegui um ROI de 4000% com este projeto, representando 20% do faturamento total dos produtos em que fiz o teste A/B. Além disso fiz outras entregas de alto valor para a empresa, como uma análise profunda nos dados de hotéis, onde eu criei uma apresentação altamente intuitiva que alcançou todas as áreas da empresa e foi base de grandes tomadas de decisão.</p>
-                                    <p class="experience-description"><span class="experience-highlight">Infelizmente fui um dos impactados no layoff da empresa.</span></p>
+                                    <p class="experience-description"><span class="experience-highlight" data-i18n="hurb_descricao">O Hurb foi uma empresa de turismo, seus principais produtos eram diárias em hotéis e pacote de viagem.</span></p>
+                                    <p class="experience-description" data-i18n="hurb_detalhes">Dentro da empresa, eu atuava principalmente em Growth, analisando dados usando python em conjunto com bigquery. Em uma de minhas análises no google analytics (GA4) notei uma demanda no mercado que não oferecíamos, portanto criei um teste A/B (usando kameleeon) para entender como os clientes iriam reagir. Eu consegui um ROI de 4000% com este projeto, representando 20% do faturamento total dos produtos em que fiz o teste A/B. Além disso fiz outras entregas de alto valor para a empresa, como uma análise profunda nos dados de hotéis, onde eu criei uma apresentação altamente intuitiva que alcançou todas as áreas da empresa e foi base de grandes tomadas de decisão.</p>
+                                    <p class="experience-description"><span class="experience-highlight" data-i18n="hurb_fim">Infelizmente a empresa faliu após o dono ser preso.</span></p>
                                     <div class="experience-skills">
                                         <span class="skill-badge">Python</span>
                                         <span class="skill-badge">BigQuery</span>
@@ -394,14 +391,15 @@
                                         </div>
                                         <div class="company-info">
                                             <h3>FRETE.COM</h3>
-                                            <p class="text-muted">Analista de dados & BI · Abr de 2023 - Mai de 2024 (1 ano e 2 meses)</p>
+                                            <p class="text-muted" data-i18n="cargo_frete">Analista de dados & BI · Abr de 2023 - Mai de 2024 (1 ano e 2 meses)</p>
                                         </div>
                                     </div>
-                                    <p class="experience-description"><span class="experience-highlight">A frete.com é uma logtech unicórnio, ela é conhecida popularmente por ser "o uber do caminhoneiro", pois seu aplicativo Fretebras trabalha conectando motoristas de caminhão à empresas com demanda de frete.</span></p>
-                                    <p class="experience-description">Dentro da empresa, trabalhava no setor comercial, com foco nos clientes estratégicos da empresa (key accounts). Usava snowflake para criar consultas SQL que alimentavam os relatórios que eu criava no Tableau. Tínhamos um foco grande na qualidade de dados, eu criei uma forma dos usuários verem em tempo real a qualidade dos dados no relatório em que ele estava analisando. Padronizei visualmente todos os relatórios do Tableau, usando táticas de UI/UX design. Fui o responsável pelo projeto de Self-service analytics da empresa, onde o foco era com que os colaboradores conseguissem criar seus próprios relatórios, ensinei 30+ pessoas a usar Tableau. Para esse projeto tive também que padronizar o consumo de dados, criando diversas tabelas One Big Table, para centralizar os dados.</p>
+                                    <p class="experience-description"><span class="experience-highlight" data-i18n="frete_descricao">A frete.com é uma logtech unicórnio, ela é conhecida popularmente por ser "o uber do caminhoneiro", pois seu aplicativo Fretebras trabalha conectando motoristas de caminhão à empresas com demanda de frete.</span></p>
+                                    <p class="experience-description" data-i18n="frete_detalhes">Dentro da empresa, trabalhava no setor comercial, com foco nos clientes estratégicos da empresa (key accounts). Usava snowflake para criar consultas SQL que alimentavam os relatórios que eu criava no Tableau (e também no Power BI). Tínhamos um foco grande na qualidade de dados, eu criei uma forma dos usuários verem em tempo real a qualidade dos dados no relatório em que ele estava analisando. Padronizei visualmente todos os relatórios do Tableau, usando táticas de UI/UX design. Fui o responsável pelo projeto de Self-service analytics da empresa, onde o foco era com que os colaboradores conseguissem criar seus próprios relatórios, ensinei 30+ pessoas a usar Tableau. Para esse projeto tive também que padronizar o consumo de dados, criando diversas tabelas One Big Table, para centralizar os dados.</p>
                                     <div class="experience-skills">
                                         <span class="skill-badge">Python</span>
                                         <span class="skill-badge">Tableau</span>
+                                        <span class="skill-badge">Power BI</span>
                                         <span class="skill-badge">Snowflake</span>
                                         <span class="skill-badge">Dremio</span>
                                     </div>
@@ -417,11 +415,11 @@
                                         </div>
                                         <div class="company-info">
                                             <h3>WHIRLPOOL S.A</h3>
-                                            <p class="text-muted">Consultor analista de business intelligence PL · Dez de 2021 - Abr de 2023 (1 meses e 5 meses)</p>
+                                            <p class="text-muted" data-i18n="cargo_whirlpool">Consultor analista de business intelligence PL · Dez de 2021 - Abr de 2023 (1 meses e 5 meses)</p>
                                         </div>
                                     </div>
-                                    <p class="experience-description"><span class="experience-highlight">A Whirlpool é uma gigante global, no Brasil ela é conhecida pelas marcas Brastemp, Consul e Kitchen Aid.</span></p>
-                                    <p class="experience-description">Atuei no setor de Trade Marketing, focado na criação de relatórios no Tableau. Utilizava BigQuery para desenvolver consultas SQL que alimentavam essas análises. Minha principal entrega foi um relatório de análise de preços, que comparava os valores dos produtos da empresa com os dos concorrentes, permitindo identificar o preço ideal para cada item e seu principal rival no mercado. Esse relatório embasou decisões estratégicas. Além disso, desenvolvi um script em Python que enviava automaticamente e-mails diários com imagens de relatórios para a diretoria.</p>
+                                    <p class="experience-description"><span class="experience-highlight" data-i18n="whirlpool_descricao">A Whirlpool é uma gigante global, no Brasil ela é conhecida pelas marcas Brastemp, Consul e Kitchen Aid.</span></p>
+                                    <p class="experience-description" data-i18n="whirlpool_detalhes">Atuei no setor de Trade Marketing, focado na criação de relatórios no Tableau. Utilizava BigQuery para desenvolver consultas SQL que alimentavam essas análises. Minha principal entrega foi um relatório de análise de preços, que comparava os valores dos produtos da empresa com os dos concorrentes, permitindo identificar o preço ideal para cada item e seu principal rival no mercado. Esse relatório embasou decisões estratégicas. Além disso, desenvolvi um script em Python que enviava automaticamente e-mails diários com imagens de relatórios para a diretoria.</p>
                                     <div class="experience-skills">
                                         <span class="skill-badge">Python</span>
                                         <span class="skill-badge">Tableau</span>
@@ -439,13 +437,11 @@
                                         </div>
                                         <div class="company-info">
                                             <h3>MOINHO ARAPONGAS S/A</h3>
-                                            <p class="text-muted">Analista de business intelligence JR · Out de 2020 - Dez de 2021 (1 ano e 3 meses)</p>
+                                            <p class="text-muted" data-i18n="cargo_moinho">Analista de business intelligence JR · Out de 2020 - Dez de 2021 (1 ano e 3 meses)</p>
                                         </div>
                                     </div>
-                                    <p class="experience-description"><span class="experience-highlight">Se destaca pela produção de farinhas de trigo e massas alimentícias de alta qualidade.</span></p>
-                                    <p class="experience-description">Desenvolvia relatórios no Tableau e Power BI para diversas áreas da empresa, com foco no setor comercial. 
-                                        Utilizava SQL Server para consumir e realizar ETL dos dados do Protheus (TOTVS). Além disso, criava e atualizava planilhas inteligentes no Excel para apoiar a equipe de produção. 
-                                        No dia a dia, identificava desafios do setor comercial e implementava soluções para otimizar a tomada de decisão, incluindo a distribuição de metas dos vendedores.Minha principal entrega foi a criação de um bot no Telegram, desenvolvido em Python, que enviava automaticamente imagens de relatórios do Tableau para os vendedores, permitindo que acompanhassem seu progresso em tempo real.</p>
+                                    <p class="experience-description"><span class="experience-highlight" data-i18n="moinho_descricao">Se destaca pela produção de farinhas de trigo e massas alimentícias de alta qualidade.</span></p>
+                                    <p class="experience-description" data-i18n="moinho_detalhes">Desenvolvia relatórios no Tableau e Power BI para diversas áreas da empresa, com foco no setor comercial. Utilizava SQL Server para consumir e realizar ETL dos dados do Protheus (TOTVS). Além disso, criava e atualizava planilhas inteligentes no Excel para apoiar a equipe de produção. No dia a dia, identificava desafios do setor comercial e implementava soluções para otimizar a tomada de decisão, incluindo a distribuição de metas dos vendedores.Minha principal entrega foi a criação de um bot no Telegram, desenvolvido em Python, que enviava automaticamente imagens de relatórios do Tableau para os vendedores, permitindo que acompanhassem seu progresso em tempo real.</p>
                                     <div class="experience-skills">
                                         <span class="skill-badge">Python</span>
                                         <span class="skill-badge">Tableau</span>
@@ -458,9 +454,9 @@
                         
                         <!-- Navigation Container -->
                         <div class="carousel-navigation-container">
-                            <button class="carousel-control-prev" type="button" data-bs-target="#experienceCarousel" data-bs-slide="prev" data-bs-toggle="tooltip" data-bs-placement="top" title="Experiência anterior">
+                            <button class="carousel-control-prev" type="button" data-bs-target="#experienceCarousel" data-bs-slide="prev" data-bs-toggle="tooltip" data-bs-placement="top" data-i18n-title="experiencia_anterior" title="Experiência anterior">
                                 <i class="fas fa-chevron-left"></i>
-                                <span class="visually-hidden">Anterior</span>
+                                <span class="visually-hidden" data-i18n="anterior">Anterior</span>
                             </button>
                             
                             <div class="carousel-indicators">
@@ -470,9 +466,9 @@
                                 <button type="button" data-bs-target="#experienceCarousel" data-bs-slide-to="3" aria-label="Experiência 4" data-bs-toggle="tooltip" data-bs-placement="top" title="MOINHO ARAPONGAS"></button>
                             </div>
                             
-                            <button class="carousel-control-next" type="button" data-bs-target="#experienceCarousel" data-bs-slide="next" data-bs-toggle="tooltip" data-bs-placement="top" title="Próxima experiência">
+                            <button class="carousel-control-next" type="button" data-bs-target="#experienceCarousel" data-bs-slide="next" data-bs-toggle="tooltip" data-bs-placement="top" data-i18n-title="proxima_experiencia" title="Próxima experiência">
                                 <i class="fas fa-chevron-right"></i>
-                                <span class="visually-hidden">Próximo</span>
+                                <span class="visually-hidden" data-i18n="proximo">Próximo</span>
                             </button>
                         </div>
                     </div>
@@ -485,8 +481,8 @@
 
         <!-- Minhas entregas -->
         <section id="entregas">
-            <h2>Meus projetos profissionais</h2>
-            <p class="disclaimer-text">
+            <h2 data-i18n="meus_projetos">Meus projetos profissionais</h2>
+            <p class="disclaimer-text" data-i18n="disclaimer_projetos">
                 Todos os números apresentados foram alterados para preservar os dados originais das empresas.<br>
                 Elas autorizaram a inclusão dessas entregas neste portfólio, desde que os números fossem modificados.
             </p>
@@ -496,13 +492,13 @@
                         <div class="projects-grid">
                             <a href="projeto-decoy-effect.html" target="_blank" class="project-item">
                                 <img src="Imagens/img_card_1.png" alt="Projeto 1" class="project-image">
-                                <div class="project-title">Decoy effect nos preços de pacotes de viagem</div>
-                                <div class="project-description">Esta análise resultou em um ROI de 4000% e 20% do faturamento dos produtos testados. Aqui explico em linguagem natural como eu fiz este projeto, com seus desafios e resultados.</div>
+                                <div class="project-title" data-i18n="projeto_decoy">Decoy effect nos preços de pacotes de viagem</div>
+                                <div class="project-description" data-i18n="descricao_decoy">Esta análise resultou em um ROI de 4000% e 20% do faturamento dos produtos testados. Aqui explico em linguagem natural como eu fiz este projeto, com seus desafios e resultados.</div>
                             </a>
                             <a href="projeto-conversao-hoteis.html" target="_blank" class="project-item">
                                 <img src="Imagens/img_card_2.png" alt="Projeto 2" class="project-image">
-                                <div class="project-title">Análise de conversão de hotéis</div>
-                                <div class="project-description">Estudo detalhado sobre a performance de conversão de vendas de hotéis, identificando padrões de comportamento e oportunidades de melhoria.</div>
+                                <div class="project-title" data-i18n="projeto_hoteis">Análise de conversão de hotéis</div>
+                                <div class="project-description" data-i18n="descricao_hoteis">Estudo detalhado sobre a performance de conversão de vendas de hotéis, identificando padrões de comportamento e oportunidades de melhoria.</div>
                             </a>
                         </div>
                     </div>
@@ -510,13 +506,13 @@
                         <div class="projects-grid">
                             <a href="projeto-erro-qualidade.html" target="_blank" class="project-item">
                                 <img src="Imagens/img_card_3.png" alt="Projeto 3" class="project-image">
-                                <div class="project-title">Erros de qualidade de dados em tempo real no dashboard</div>
-                                <div class="project-description">O que você faz quando um dashboard amplamente utilizado está com alguma incosistência nos dados?<br> Até você avisar para todas as pessoas sobre o problema pode ser tarde demais e alguém tomar decisões baseadas em dados inconsistentes.<br> A não ser que esta inconsistência seja mostrada no próprio relatório, em tempo real.</div>
+                                <div class="project-title" data-i18n="projeto_erros">Erros de qualidade de dados em tempo real no dashboard</div>
+                                <div class="project-description" data-i18n="descricao_erros">O que você faz quando um dashboard amplamente utilizado está com alguma incosistência nos dados?<br> Até você avisar para todas as pessoas sobre o problema pode ser tarde demais e alguém tomar decisões baseadas em dados inconsistentes.<br> A não ser que esta inconsistência seja mostrada no próprio relatório, em tempo real.</div>
                             </a>
                             <a href="google.com" target="_blank" class="project-item">
                                 <img src="Imagens/img_card_4.png" alt="Projeto 4" class="project-image">
-                                <div class="project-title">Em desenvolvimento</div>
-                                <div class="project-description">Em desenvolvimento, disponível em breve.</div>
+                                <div class="project-title" data-i18n="projeto_desenvolvimento">Em desenvolvimento</div>
+                                <div class="project-description" data-i18n="descricao_desenvolvimento">Em desenvolvimento, disponível em breve.</div>
                             </a>
                         </div>
                     </div>
@@ -524,9 +520,9 @@
                 
                 <!-- Navigation Container -->
                 <div class="carousel-navigation-container">
-                    <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev" data-bs-toggle="tooltip" data-bs-placement="top" title="Projetos anteriores">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev" data-bs-toggle="tooltip" data-bs-placement="top" data-i18n-title="projetos_anteriores" title="Projetos anteriores">
                         <i class="fas fa-chevron-left"></i>
-                        <span class="visually-hidden">Anterior</span>
+                        <span class="visually-hidden" data-i18n="anterior">Anterior</span>
                     </button>
                     
                     <div class="carousel-indicators">
@@ -534,9 +530,9 @@
                         <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     </div>
                     
-                    <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next" data-bs-toggle="tooltip" data-bs-placement="top" title="Próximos projetos">
+                    <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next" data-bs-toggle="tooltip" data-bs-placement="top" data-i18n-title="proximos_projetos" title="Próximos projetos">
                         <i class="fas fa-chevron-right"></i>
-                        <span class="visually-hidden">Próximo</span>
+                        <span class="visually-hidden" data-i18n="proximo">Próximo</span>
                     </button>
                 </div>
             </div>
