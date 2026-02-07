@@ -46,7 +46,7 @@
         <div class="content-wrapper">
             <a href="index.html" class="back-button">
                 <i class="fas fa-chevron-left"></i>
-                Voltar ao portfólio
+                <span data-i18n="voltar_portfolio">Voltar ao portfólio</span>
             </a>
             
             <div class="project-header">
@@ -69,7 +69,7 @@
                 <span class="meta-item">Tableau</span>
                 <span class="meta-item">Snowflake (SQL)</span>
                 <span class="meta-item">Google Sheets</span>
-                <span class="meta-item">Qualidade de dados</span>
+                <span class="meta-item" data-i18n="projeto_erros_meta_qualidade">Qualidade de dados</span>
             </div>
 
             <!-- <p class="disclaimer">Todos os números apresentados aqui foram alterados para preservar os dados originais da empresa, tenho autorização para a publicação desta entrega neste portfólio.</p> -->
@@ -81,40 +81,39 @@
 
             <div class="project-content">
                 <h2 data-i18n="entendendo_projeto">Entendendo o projeto</h2>
-                <p>Na minha experiência na frete.com eu trabalhei de forma muito presente no setor comercial, desde o dia que entrei eu percebi que o time tinha muita desconfiança nos dados fornecidos pelos relatórios da empresa.<br>Com o passar do tempo fui entendendo que eles realmente tinham motivos para isso, sabe aquele problema de o mesmo indicador ter números diferentes dependendo do dashboard analisado? Isso acontecia com bastante frequência no tempo anterior à minha chegada na empresa.</p>
+                <p data-i18n="erro_intro_1"></p>
                 <h2 data-i18n="buscando_solucoes">Buscando soluções</h2>
-                <p>Sabendo desses problemas de qualidade de dados na empresa, discuti soluções com meu então lider e um colega de equipe.</p>
-                <p>Sugeri criar além de uma centralização de dados numa única tabela (tabela verdade), também criar uma forma em que o próprio usuário no Tableau pudesse nos indicar (e indicar a qualquer pessoa que abrisse o relatório) que algo estava errado.</p>
-                <h4>Tabela verdade?</h4>
-                <p>Como disse anteriormente, a frete.com tinha muitos problemas com o mesmo indicador ter números diferentes dependendo do dashboard analisado. Isso acontecia porque em cada relatório a forma de consultar esse dado era diferente, como a empresa tinha mais de um profissional querendo a mesma informação, eles acabavam fazendo de forma diferente por falta de comunicação.</p>
-                <p>Centralizando os dados numa única tabela, o número acaba sendo exatamente o mesmo independente do dashboard analisado.<br>
-                Eu tive essa ideia pensando no modelo star schema, que é basicamente centralizar os dados de dimensões numa única tabela fato.</p>
+                <p data-i18n="erro_buscando_1"></p>
+                <p data-i18n="erro_buscando_2"></p>
+                <h4 data-i18n="erro_tabela_title"></h4>
+                <p data-i18n="erro_tabela_1"></p>
+                <p data-i18n="erro_tabela_2"></p>
                 <img src="Imagens/star_schema.png" alt="Modelo Star Schema com fact_sales no centro e dimensões dim_product, dim_customer, dim_store e dim_date" class="project-image-medium">
-                <p>A diferença aqui é que as dimensões são o que eu chamava de "subqueries", uma delas por exemplo é a query que trazia informações dos clientes, e a tabela fato era de fato a "tabela verdade", que juntava todas essas subqueries num único lugar.</p>
-                <p>Isso deu muito certo, conseguimos reduzir para praticamente zero os chamados relacionados a dados diferentes para o mesmo indicador nos relatórios.</p>
-                <h4>Como o próprio usuário pode nos avisar que algo está errado?</h4>
-                <p>Com base nas minhas experiências, já sei que apenas trabalhar com mensagens no canal oficial da empresa é algo que não funciona, principalmente por que apenas uma parte dos consumidores do relatório irão ver esse aviso no canal oficial.</p>
-                <p>Tive então que pensar numa solução funcional e criativa para isso, e cheguei na conclusão que o próprio relatório deve mostrar (em tempo real) se seus números estão corretos ou não.</p>
-                <p>E como tudo que faço, deixei a implementação de uma forma extramente intuitiva para o usuário. <br>O usuário vê em tempo real a situação do relatório, ele sabe distinguir se está ruim ou bom apenas por cores.</p>
+                <p data-i18n="erro_tabela_3"></p>
+                <p data-i18n="erro_tabela_4"></p>
+                <h4 data-i18n="erro_usuario_title"></h4>
+                <p data-i18n="erro_usuario_1"></p>
+                <p data-i18n="erro_usuario_2"></p>
+                <p data-i18n="erro_usuario_3"></p>
                 <img src="Imagens/kpis_qualidade.png" alt="kpi's de qualidade" class="project-image-medium">
-                <p>O usuário pode ver somente um desses indicadores, e ele indica a "saúde" dos dados do relatório.<br>A cor vermelha, como padrão em praticamente tudo, indica que algo está errado, já a cor verde que algo está bom.</p>
-                <p>Você pode ver que temos vários níveis de problemas, desde os mais simples até os mais complexos.<br>O erro "leve" por exemplo indica geralmente que o problema é apenas em um registro, que não impacta muita coisa.<br>Já o erro "Muito grave" indica que o problema está impactando muito os números do relatório.</p>
+                <p data-i18n="erro_kpis_1"></p>
+                <p data-i18n="erro_kpis_2"></p>
                 <h2 data-i18n="funcionamento_pratica">Funcionamento na prática</h2>
-                <p>Reforçando o compromisso com a facilidade de uso, o aviso fica visível o tempo inteiro para o usuário, sem tirar a atenção dele na análise do relatório (as cores foram pensadas para isso).</p>
-                <p>O usuário pode ver exatamente qual é o problema que está acontecendo simplesmente passando o mouse por cima do aviso.</p>
+                <p data-i18n="erro_func_1"></p>
+                <p data-i18n="erro_func_2"></p>
                 <video autoplay loop muted playsinline class="project-image">
                     <source src="Imagens/uso_kpi_video.mp4" type="video/mp4">
                     Seu navegador não suporta vídeos HTML5.
                 </video>
-                <p>No exemplo acima, o relatório estava com erro "leve", além disso indico qual é o erro e quem é o responsável pela solução dele.</p>
-                <p>Achou legal o layout do relatório? É todo criado por mim também, usando táticas de UI/UX design para facilitar o uso do usuário, esse layout virou um padrão nos relatórios da frete.com</p>
-                <h4>E como é o "backend" disso?</h4>
-                <p>É bem simples, quando o usuário vê um problema ele simplesmente clica no ícone e ele é redirecionado a um formulário google e preenche o problema que encontrou.</p>
-                <p>A partir disso, recebemos um registro em um google sheets, este está atrelado ao dashboard e em tempo real já altera o icone no tableau para "erro em análise".<br>Então eu analiso e valido se é um erro de fato, e dou uma nota para o mesmo, se é leve, médio, etc.</p>
-                <p>Até este momento os erros eram reportados manualmente, mas estávamos trabalhando para também automatizar outros erros mais fáceis de serem identificados, como um número muito outlier no faturamento.</p>
-                <p>Infelizmente saí da empresa antes que conseguísse automatizar, mas tanto as tabelas verdade quanto o indicador de erro continuam presentes na empresa até hoje.</p>
+                <p data-i18n="erro_exemplo_1"></p>
+                <p data-i18n="erro_exemplo_2"></p>
+                <h4 data-i18n="erro_backend_title"></h4>
+                <p data-i18n="erro_backend_1"></p>
+                <p data-i18n="erro_backend_2"></p>
+                <p data-i18n="erro_backend_3"></p>
+                <p data-i18n="erro_backend_4"></p>
                 <h2 data-i18n="conclusao">Conclusão</h2>
-                <p>Conforme foi visto, esta implementação foi um sucesso, como os reports de erro eram armazenados numa google sheets, nós até conseguíamos mensurar quantos erros os relatórios tinham e seus motivos.<br>Isso acabou se tornando um relatório a parte, que indicava a "saúde" dos nossos relatórios, e também se tornou um PDI para os analistas de dados, algo do tipo: no próximo trimestre a soma de erros de seus relatórios não pode ser maior que 6.</p>
+                <p data-i18n="erro_conclusao_1"></p>
 
             </div>
         </div>

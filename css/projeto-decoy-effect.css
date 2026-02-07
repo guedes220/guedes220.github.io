@@ -109,6 +109,7 @@
 
 .project-content p {
     margin-bottom: 1rem;
+    white-space: pre-line;
 }
 
 .project-image {
