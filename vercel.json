@@ -1,24 +1,18 @@
 {
   "redirects": [
-    {
-      "source": "/projeto-decoy-effect.html",
-      "destination": "/decoy-effect-project",
-      "permanent": true
-    },
-    {
-      "source": "/projeto-decoy-effect",
-      "destination": "/decoy-effect-project",
-      "permanent": true
-    }
+    {"source": "/projeto-decoy-effect.html", "destination": "/decoy-effect-project", "permanent": true},
+    {"source": "/projeto-decoy-effect", "destination": "/decoy-effect-project", "permanent": true},
+    {"source": "/projeto-conversao-hoteis.html", "destination": "/hotel-conversion-analysis", "permanent": true},
+    {"source": "/projeto-conversao-hoteis", "destination": "/hotel-conversion-analysis", "permanent": true},
+    {"source": "/projeto-erro-qualidade.html", "destination": "/real-time-data-quality-errors-in-dashboards", "permanent": true},
+    {"source": "/projeto-erro-qualidade", "destination": "/real-time-data-quality-errors-in-dashboards", "permanent": true}
   ],
   "rewrites": [
-    {
-      "source": "/decoy-effect-project",
-      "destination": "/projeto-decoy-effect.html"
-    },
-    {
-      "source": "/decoy-effect-project/",
-      "destination": "/projeto-decoy-effect.html"
-    }
+    {"source": "/decoy-effect-project", "destination": "/projeto-decoy-effect.html"},
+    {"source": "/decoy-effect-project/", "destination": "/projeto-decoy-effect.html"},
+    {"source": "/hotel-conversion-analysis", "destination": "/projeto-conversao-hoteis.html"},
+    {"source": "/hotel-conversion-analysis/", "destination": "/projeto-conversao-hoteis.html"},
+    {"source": "/real-time-data-quality-errors-in-dashboards", "destination": "/projeto-erro-qualidade.html"},
+    {"source": "/real-time-data-quality-errors-in-dashboards/", "destination": "/projeto-erro-qualidade.html"}
   ]
 }
