@@ -573,6 +573,7 @@ h3 {
     margin-top: 1rem;
     font-family: 'Roboto', sans-serif;
     font-size: calc(1rem * var(--scale-factor));
+    white-space: pre-line;
 }
 
 .experience-highlight {
