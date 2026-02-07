@@ -304,8 +304,8 @@ document.addEventListener('DOMContentLoaded', function() {
             // Traduções da seção "Próximos passos"
             decoy_funcionou: "O decoy effect funcionou, mostramos estatísticamente que conseguímos aumentar o ticket médio da empresa com este experimento.",
             proximo_passo_analise: "Deste modo agora o próximo passo seria analisar destino por destino e identificar qual seria o decoy para cada um deles, o que seria mais vantajoso financeiramente para a empresa. Automatizando esse processo através do python, usando dados da empresa em conjunto com dados do Skyscanner.",
-            nao_cheguei_nivel: "Infelizmente não consegui chegar neste nível por que fui desligado da empresa por conta de um layoff (pois eu tinha pouco tempo de casa), mas como você pode ver, este projeto foi um sucesso, assim que aplicado.",
-            acredito_sucesso: "Acredito fortemente que a empresa irá lucrar muito com este experimento, e que ele será um sucesso assim que aplicado.",
+            nao_cheguei_nivel: "Infelizmente, não pude chegar à fase final do projeto porque a empresa declarou falência e fui dispensado. No entanto, a implementação inicial foi um sucesso evidente.",
+            acredito_sucesso: "Acredito firmemente que o experimento teria gerado uma receita significativa caso a empresa tivesse continuado em operação.",
             voltar_portfolio: "Voltar ao portfólio",
             // Traduções da seção "Entendendo o projeto" do projeto de conversão de hotéis
             hoteis_intro: "O Hurb é uma empresa de turismo, seus principais produtos são diárias em hotéis e pacotes de viagem.",
@@ -456,8 +456,8 @@ document.addEventListener('DOMContentLoaded', function() {
             // Traduções da seção "Próximos passos"
             decoy_funcionou: "The decoy effect worked, we statistically showed that we increased the company's average ticket with this experiment.",
             proximo_passo_analise: "From this point, the next step would be to analyze destination by destination and identify what would be the decoy for each one, which would be more financially advantageous for the company. Automating this process through Python, using company data in conjunction with Skyscanner data.",
-            nao_cheguei_nivel: "Unfortunately, I couldn't reach this level because I was laid off from the company due to a layoff (since I had little time at home), but as you can see, this project was a success as soon as it was applied.",
-            acredito_sucesso: "I strongly believe that the company will make a lot of money with this experiment, and that it will be a success as soon as it is applied.",
+            nao_cheguei_nivel: "Unfortunately, I wasn't able to reach the final stage of the project because the company declared bankruptcy and I was laid off. However, the initial implementation was a clear success.",
+            acredito_sucesso: "I strongly believe the experiment would have generated significant revenue had the company remained operational.",
             voltar_portfolio: "Back to portfolio",
             // Traduções da seção "Entendendo o projeto" do projeto de conversão de hotéis
             hoteis_intro: "Hurb is a tourism company, its main products are hotel daily rates and travel packages.",
