@@ -1,0 +1,24 @@
+{
+  "redirects": [
+    {
+      "source": "/projeto-decoy-effect.html",
+      "destination": "/decoy-effect-project",
+      "permanent": true
+    },
+    {
+      "source": "/projeto-decoy-effect",
+      "destination": "/decoy-effect-project",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/decoy-effect-project",
+      "destination": "/projeto-decoy-effect.html"
+    },
+    {
+      "source": "/decoy-effect-project/",
+      "destination": "/projeto-decoy-effect.html"
+    }
+  ]
+}
